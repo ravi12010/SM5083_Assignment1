@@ -1,0 +1,74 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{geometry}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{mathtools}
+\usepackage{commath}
+
+\title{\textbf{\Huge Assignment 1}}
+\author{\large Ravi Kumar - SM21Mtech12010}
+
+\date{August 2021}
+
+\begin{document}
+\providecommand{\mbf}{\mathbf}
+
+
+\newcommand{\myvec}[1]{\ensuremath{\begin{pmatrix}#1\end{pmatrix}}}
+\let\vec\mathbf
+
+
+\maketitle
+
+\section*{Chapter II, Examples II,Q.22(i)}
+
+\textbf{1.Find the conditions that the four points}
+\myvec{x1\\y1}, \myvec{x2\\y2},
+\myvec{x3\\y3}, \myvec{x4\\y4}
+\textbf{ may be the vertices of a square.}
+
+
+\textbf{Solution : }
+\vspace{0.2cm}
+
+The given points are:
+\begin{align*}
+\vec{P} = \myvec{x1\\y1}, \vec{Q} =\myvec{x2\\y2},
+\vec{R} =\myvec{x3\\y3}, \vec{S} =\myvec{x4\\y4},
+\end{align*}
+
+
+Condition for the given four points be the vertices of a square are ;-\\
+1) If distance between all the four sides are equal and\\
+2) distance between two diagonals are equal.
+
+\vspace{0.2cm}
+
+Now If we have two vectors, say,
+\begin{align*}
+\vec{U} = \myvec{u1\\u2}, \vec{V} =\myvec{v1\\v2}
+\end{align*} 
+
+
+then distance can be calculated using norm of a vector, i.e., 
+$$\norm{ \vec{U} - \vec{V}} = \sqrt{(u1-v1)^2+(u2-v2)^2}$$
+Here, $$ d1=\norm{ \vec{P} - \vec{Q}} =\sqrt{(x2-x1)^2+(y2-y1)^2}$$
+$$ d2=\norm{ \vec{Q} - \vec{R}} =\sqrt{(x3-x2)^2+(y3-y2)^2}$$
+$$ d3=\norm{ \vec{R} - \vec{S}} =\sqrt{(x4-x3)^2+(y4-y3)^2}$$
+$$ d4=\norm{ \vec{S} - \vec{P}} =\sqrt{(x1-x4)^2+(y1-y4)^2}$$
+
+\vspace{0.2cm}
+and then calculate distance of diagonal using 
+$$diagonal = \sqrt{2}* side length$$
+
+
+
+
+Now if \\ 1) d1 = d2 = d3 = d4\\ 
+2) diagonal1 = diagonal2 
+
+
+\textbf{Then, we can say that the given point are the vertices of a square.}
+
+\end{document}
